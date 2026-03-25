@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>給ㄇㄨㄇㄨ的生日驚喜</title>
+    <style>
+        /* 溫暖柔和的黃色背景 */
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff9e6 0%, #ffecb3 50%, #ffd54f 100%);
+            color: #5d4037;
+        }
+
+        /* 磨砂玻璃卡片 */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 30px;
+            padding: 35px 25px;
+            width: 85%;
+            max-width: 400px;
+            box-shadow: 0 15px 35px rgba(210, 180, 100, 0.2);
+            text-align: center;
+        }
+
+        h1.main-title {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin: 0 0 10px 0;
+            color: #8d6e63;
+        }
+
+        p.sub-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #f57f17;
+            margin: 0 0 25px 0;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+        }
+
+        .spotify-wrapper {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            line-height: 0;
+            background: #282828;
+            min-height: 352px;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 0.95rem;
+            color: #795548;
+            line-height: 1.6;
+        }
+
+        .login-note {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.75rem;
+            color: #a1887f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <h1 class="main-title">謝謝你帶采凌去看富士山</h1>
+        <p class="sub-title">ㄇㄨㄇㄨ生日快樂</p>
+        
+        <div class="spotify-wrapper">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0JgVs3HlkkIxyGFHfukN8c?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <div class="footer">
+            在和好咖啡第一次聽到這首歌時是與你一起的 ☕️
+            <span class="login-note">
+                (記得登入 Spotify 才能聽取完整歌曲喔)
+            </span>
+        </div>
+    </div>
+
+</body>
+</html>
